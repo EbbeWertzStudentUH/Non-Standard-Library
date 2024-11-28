@@ -2,8 +2,8 @@
 #define COMMANDPARSER_H
 
 #include <string>
-#include <set>
-#include <map>
+#include <unordered_set>
+#include <unordered_map>
 
 using namespace std;
 
@@ -11,12 +11,12 @@ class CommandParser {
 public:
     struct Command{
         string commandName;
-        map<string, string> params;
-        set<string> flags;
+        unordered_map<string, string> params;
+        unordered_set<string> flags;
     };
 
     Command getInput(const string &prompt);
-    bool validate(Command cmd, set<string> allowedParams, set<string> allowedFlags);
+    bool validate(Command cmd, unordered_set<string> allowedParams, unordered_set<string> allowedFlags);
 
 private:
     void parseToken(istringstream& iss, CommandParser::Command& cmd);

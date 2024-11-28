@@ -1,5 +1,6 @@
 #include <iostream>
 #include <sstream>
+#include <unordered_set>
 #include "CommandParser.h"
 
 CommandParser::Command CommandParser::getInput(const string &prompt) {
@@ -46,7 +47,7 @@ void CommandParser::parseToken(istringstream& iss, CommandParser::Command& cmd){
     parseToken(iss, cmd);
 }
 
-bool CommandParser::validate(CommandParser::Command cmd, set<string> allowedParams, set<string> allowedFlags) {
+bool CommandParser::validate(CommandParser::Command cmd, unordered_set<string> allowedParams, unordered_set<string> allowedFlags) {
     for(auto [param, value] : cmd.params){
         if (allowedParams.find(param) == allowedParams.end()) {
             return false;

@@ -7,4 +7,7 @@ include_directories(src)
 
 add_executable(CLI_Module
         src/CommandParser.cpp
-        src/CommandParser.h)
+        src/CommandParser.h
+        src/CLI.cpp
+        src/CLI.h
+        src/main.cpp)

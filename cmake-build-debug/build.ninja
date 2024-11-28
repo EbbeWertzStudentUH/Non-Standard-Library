@@ -56,6 +56,20 @@ build CMakeFiles/CLI_Module.dir/src/CommandParser.cpp.obj: CXX_COMPILER__CLI_Mod
   OBJECT_DIR = CMakeFiles\CLI_Module.dir
   OBJECT_FILE_DIR = CMakeFiles\CLI_Module.dir\src
 
+build CMakeFiles/CLI_Module.dir/src/CLI.cpp.obj: CXX_COMPILER__CLI_Module_unscanned_Debug C$:/Users/houwe/Desktop/CLI-Module/src/CLI.cpp || cmake_object_order_depends_target_CLI_Module
+  DEP_FILE = CMakeFiles\CLI_Module.dir\src\CLI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/houwe/Desktop/CLI-Module/src
+  OBJECT_DIR = CMakeFiles\CLI_Module.dir
+  OBJECT_FILE_DIR = CMakeFiles\CLI_Module.dir\src
+
+build CMakeFiles/CLI_Module.dir/src/main.cpp.obj: CXX_COMPILER__CLI_Module_unscanned_Debug C$:/Users/houwe/Desktop/CLI-Module/src/main.cpp || cmake_object_order_depends_target_CLI_Module
+  DEP_FILE = CMakeFiles\CLI_Module.dir\src\main.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/houwe/Desktop/CLI-Module/src
+  OBJECT_DIR = CMakeFiles\CLI_Module.dir
+  OBJECT_FILE_DIR = CMakeFiles\CLI_Module.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CLI_Module
@@ -64,7 +78,7 @@ build CMakeFiles/CLI_Module.dir/src/CommandParser.cpp.obj: CXX_COMPILER__CLI_Mod
 #############################################
 # Link the executable CLI_Module.exe
 
-build CLI_Module.exe: CXX_EXECUTABLE_LINKER__CLI_Module_Debug CMakeFiles/CLI_Module.dir/src/CommandParser.cpp.obj
+build CLI_Module.exe: CXX_EXECUTABLE_LINKER__CLI_Module_Debug CMakeFiles/CLI_Module.dir/src/CommandParser.cpp.obj CMakeFiles/CLI_Module.dir/src/CLI.cpp.obj CMakeFiles/CLI_Module.dir/src/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CLI_Module.dir
