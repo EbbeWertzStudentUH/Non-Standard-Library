@@ -1,7 +1,7 @@
 #include <iostream>
 #include <sstream>
 #include <unordered_set>
-#include "CommandParser.h"
+#include "../../include/CLI_module/CommandParser.h"
 
 CommandParser::Command CommandParser::getInput(const string &prompt) {
     Command cmd;
