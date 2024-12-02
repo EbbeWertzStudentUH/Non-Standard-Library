@@ -1,6 +1,6 @@
 // taakverdeling + functies documentatie: zie h-file
 
-#include "Pool.h"
+#include "../../include/Memory_mgmt/Pool.h"
 
 template<typename K, typename V>
 V *Pool<K, V>::use(const V &object, const K& separateKey) {
